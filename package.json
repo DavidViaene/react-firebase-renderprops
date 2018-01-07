@@ -8,7 +8,7 @@
     "lint": "eslint src/**; exit 0",
     "prepublish": "npm run build",
     "test": "jest -c jest.config.unit.js --watchAll",
-    "precommit": "lint-staged",
+    "precommit": "lint-staged"
   },
   "lint-staged": {
     "*.js": [
