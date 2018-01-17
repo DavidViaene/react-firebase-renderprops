@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ec31fa7-3f94-44f5-8bd6-ac7e89f3e3a8" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/__mocks__/react-native-fetch-blob.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/RNFirebaseUploadMedia.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/RNFirebaseUploadMedia.spec.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/helpers.js" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/.npmignore" afterPath="$PROJECT_DIR$/.npmignore" />
-      <change beforePath="$PROJECT_DIR$/jest.config.common.js" afterPath="$PROJECT_DIR$/jest.config.common.js" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/src/Firebase.spec.js" afterPath="$PROJECT_DIR$/src/Firebase.spec.js" />
-      <change beforePath="$PROJECT_DIR$/src/FirebaseAuthState.spec.js" afterPath="$PROJECT_DIR$/src/FirebaseAuthState.spec.js" />
-      <change beforePath="$PROJECT_DIR$/src/FirebaseDownloadURL.spec.js" afterPath="$PROJECT_DIR$/src/FirebaseDownloadURL.spec.js" />
-      <change beforePath="$PROJECT_DIR$/src/FirebaseQuery.js" afterPath="$PROJECT_DIR$/src/FirebaseQuery.js" />
-      <change beforePath="$PROJECT_DIR$/src/FirebaseQuery.spec.js" afterPath="$PROJECT_DIR$/src/FirebaseQuery.spec.js" />
-      <change beforePath="$PROJECT_DIR$/src/FirebaseReference.spec.js" afterPath="$PROJECT_DIR$/src/FirebaseReference.spec.js" />
-      <change beforePath="$PROJECT_DIR$/src/FirebaseReferencePush.js" afterPath="$PROJECT_DIR$/src/FirebaseReferencePush.js" />
-      <change beforePath="$PROJECT_DIR$/src/FirebaseSignIn.spec.js" afterPath="$PROJECT_DIR$/src/FirebaseSignIn.spec.js" />
-      <change beforePath="$PROJECT_DIR$/src/FirebaseSignOut.js" afterPath="$PROJECT_DIR$/src/FirebaseSignOut.js" />
-      <change beforePath="$PROJECT_DIR$/src/FirebaseSignOut.spec.js" afterPath="$PROJECT_DIR$/src/FirebaseSignOut.spec.js" />
-      <change beforePath="$PROJECT_DIR$/src/FirebaseStorage.spec.js" afterPath="$PROJECT_DIR$/src/FirebaseStorage.spec.js" />
       <change beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -36,14 +16,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="700">
+              <caret line="35" column="4" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#34#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="200">
+              <caret line="10" column="47" lean-forward="true" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -58,7 +46,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="80">
@@ -101,8 +89,8 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/jest.config.common.js" />
         <option value="$PROJECT_DIR$/jest.config.unit.js" />
-        <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/.npmignore" />
+        <option value="$PROJECT_DIR$/src/index.js" />
       </list>
     </option>
   </component>
@@ -195,12 +183,12 @@
       <workItem from="1515335700175" duration="3788000" />
       <workItem from="1515352008894" duration="3000" />
       <workItem from="1515403411202" duration="2000" />
-      <workItem from="1516215790619" duration="2626000" />
+      <workItem from="1516215790619" duration="2712000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8629000" />
+    <option name="totallyTimeSpent" value="8715000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3" y="23" width="2278" height="1149" extended-state="0" />
@@ -492,7 +480,7 @@
         <state relative-caret-position="468">
           <caret line="86" column="9" lean-forward="false" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -502,7 +490,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -512,7 +500,7 @@
         <state relative-caret-position="391">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -522,7 +510,7 @@
         <state relative-caret-position="102">
           <caret line="6" column="36" lean-forward="false" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -548,7 +536,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -569,24 +557,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="4" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.npmignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -599,6 +569,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="35" column="4" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="47" lean-forward="true" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
           <folding />
         </state>
       </provider>
