@@ -42,13 +42,13 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="120">
-                <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <first_editor relative-caret-position="160">
+                <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="14" />
                 <folding>
-                  <marker date="1516219656811" expanded="true" signature="166:634" ph="&lt;Firebase/&gt;" />
-                  <marker date="1516219656811" expanded="true" signature="237:616" ph="&lt;FirebaseReference/&gt;" />
-                  <marker date="1516219656811" expanded="true" signature="349:600" ph="&lt;FirebaseQuery/&gt;" />
-                  <marker date="1516219656811" expanded="true" signature="480:576" ph="&lt;View/&gt;" />
+                  <marker date="1516219734339" expanded="true" signature="167:635" ph="&lt;Firebase/&gt;" />
+                  <marker date="1516219734339" expanded="true" signature="238:617" ph="&lt;FirebaseReference/&gt;" />
+                  <marker date="1516219734339" expanded="true" signature="350:601" ph="&lt;FirebaseQuery/&gt;" />
+                  <marker date="1516219734339" expanded="true" signature="481:577" ph="&lt;View/&gt;" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -203,12 +203,12 @@
       <workItem from="1515335700175" duration="3788000" />
       <workItem from="1515352008894" duration="3000" />
       <workItem from="1515403411202" duration="2000" />
-      <workItem from="1516215790619" duration="3466000" />
+      <workItem from="1516215790619" duration="3516000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9469000" />
+    <option name="totallyTimeSpent" value="9519000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3" y="23" width="2278" height="1149" extended-state="0" />
@@ -604,13 +604,13 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="120">
-            <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <first_editor relative-caret-position="160">
+            <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="14" />
             <folding>
-              <marker date="1516219656811" expanded="true" signature="166:634" ph="&lt;Firebase/&gt;" />
-              <marker date="1516219656811" expanded="true" signature="237:616" ph="&lt;FirebaseReference/&gt;" />
-              <marker date="1516219656811" expanded="true" signature="349:600" ph="&lt;FirebaseQuery/&gt;" />
-              <marker date="1516219656811" expanded="true" signature="480:576" ph="&lt;View/&gt;" />
+              <marker date="1516219734339" expanded="true" signature="167:635" ph="&lt;Firebase/&gt;" />
+              <marker date="1516219734339" expanded="true" signature="238:617" ph="&lt;FirebaseReference/&gt;" />
+              <marker date="1516219734339" expanded="true" signature="350:601" ph="&lt;FirebaseQuery/&gt;" />
+              <marker date="1516219734339" expanded="true" signature="481:577" ph="&lt;View/&gt;" />
             </folding>
           </first_editor>
           <second_editor />

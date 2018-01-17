@@ -6,7 +6,7 @@ yarn add react-firebase-renderprops
 ```
 
 ### Example React Native
-```javascript
+```jsx harmony
 <Firebase
   config={config.firebaseConfig}
   render={firebase => (
