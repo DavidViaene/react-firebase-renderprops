@@ -1,10 +1,12 @@
 # React Firebase: render props
 React components for Firebase, using render props
 
-
+```
+yarn add react-firebase-renderprops
+```
 
 ### Example React Native
-```
+```javascript
 <Firebase
   config={config.firebaseConfig}
   render={firebase => (
