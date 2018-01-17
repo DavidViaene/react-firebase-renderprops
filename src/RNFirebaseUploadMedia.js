@@ -17,7 +17,7 @@ class RNFirebaseUploadMedia extends Component {
     storagePath: PropTypes.string.isRequired,
     fileName: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
       .isRequired,
-    ext: PropTypes.string.isRequired,
+    ext: PropTypes.string,
     render: PropTypes.func.isRequired
   };
 
