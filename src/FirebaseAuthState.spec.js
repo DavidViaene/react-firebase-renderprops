@@ -6,7 +6,7 @@ import firebase from '../jest/utils/firebase';
 describe('FirebaseAuthState', () => {
   test('render prop should be called', () => {
     const renderPropMock = jest.fn();
-    const firebaseAuthState = shallow(
+    shallow(
       <FirebaseAuthState
         render={renderPropMock}
         onChange={() => {}}

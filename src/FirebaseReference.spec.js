@@ -6,15 +6,13 @@ import firebase from '../jest/utils/firebase';
 describe('FirebaseReference', () => {
   test('calls render props', () => {
     const renderPropMock = jest.fn();
-    const firebaseReference = shallow(
-      <FirebaseReference firebase={{}} render={renderPropMock} />
-    );
+    shallow(<FirebaseReference firebase={{}} render={renderPropMock} />);
     expect(renderPropMock.mock.calls.length).toEqual(1);
   });
 
   test('calls render props with path', () => {
     const renderPropMock = jest.fn();
-    const firebaseReference = shallow(
+    shallow(
       <FirebaseReference
         firebase={firebase}
         render={renderPropMock}
@@ -26,7 +24,7 @@ describe('FirebaseReference', () => {
 
   test('calls render props with path', () => {
     const renderPropMock = jest.fn();
-    const firebaseReference = shallow(
+    shallow(
       <FirebaseReference
         firebase={firebase}
         render={renderPropMock}

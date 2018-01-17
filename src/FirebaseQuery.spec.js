@@ -5,16 +5,14 @@ import FirebaseQuery from './FirebaseQuery';
 describe('FirebaseQuery', () => {
   test('render prop is called', () => {
     const renderPropMock = jest.fn();
-    const firebaseQuery = shallow(
-      <FirebaseQuery reference={{}} render={renderPropMock} />
-    );
+    shallow(<FirebaseQuery reference={{}} render={renderPropMock} />);
 
     expect(renderPropMock.mock.calls.length).toEqual(1);
   });
 
   test('render prop is called with to array', () => {
     const renderPropMock = jest.fn();
-    const firebaseQuery = shallow(
+    shallow(
       <FirebaseQuery reference={{}} render={renderPropMock} toArray={true} />
     );
 

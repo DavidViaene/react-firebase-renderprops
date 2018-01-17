@@ -92,8 +92,8 @@ class FirebaseQuery extends Component {
       this.query.on('child_added', snapshot => {
         const value = snapshot.val();
         this.setState({value});
-        if (onChange) {
-          onChange(value);
+        if (onChildAdded) {
+          onChildAdded(value);
         }
       });
     }

@@ -5,7 +5,7 @@ import {shallow} from 'enzyme';
 
 describe('FirebaseSignInCredentials', () => {
   test('component instantiation does not break', () => {
-    const _firebaseSignIn = shallow(
+    shallow(
       <FirebaseSignInCredentials
         firebase={firebase}
         email="test"
@@ -17,7 +17,7 @@ describe('FirebaseSignInCredentials', () => {
   test('onSuccess is called', done => {
     expect.assertions(1);
     const onSuccessMock = jest.fn();
-    const _firebaseSignIn = shallow(
+    shallow(
       <FirebaseSignInCredentials
         firebase={firebase}
         email="test"
@@ -43,7 +43,7 @@ describe('FirebaseSignInCredentials', () => {
         }
       })
     };
-    const _firebaseSignIn = shallow(
+    shallow(
       <FirebaseSignInCredentials
         firebase={rejectSignIn}
         email="test"

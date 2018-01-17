@@ -5,15 +5,13 @@ import firebase from '../jest/utils/firebase';
 
 describe('FirebaseSignOut', () => {
   test('it can be instantiated', () => {
-    const _firebaseSignOut = shallow(<FirebaseSignOut firebase={firebase} />);
+    shallow(<FirebaseSignOut firebase={firebase} />);
   });
 
   test('render onSuccess is called', done => {
     expect.assertions(1);
     const onSuccessMock = jest.fn();
-    const _firebaseSignOut = shallow(
-      <FirebaseSignOut firebase={firebase} onSuccess={onSuccessMock} />
-    );
+    shallow(<FirebaseSignOut firebase={firebase} onSuccess={onSuccessMock} />);
 
     setTimeout(() => {
       expect(onSuccessMock.mock.calls.length).toEqual(1);
@@ -32,7 +30,7 @@ describe('FirebaseSignOut', () => {
         }
       })
     };
-    const _firebaseSignOut = shallow(
+    shallow(
       <FirebaseSignOut
         firebase={rejectedFirebaseSignOut}
         onError={onErrorMock}

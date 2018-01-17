@@ -1,25 +1,27 @@
 import Firebase from './Firebase';
 import FirebaseAuthState from './FirebaseAuthState';
-import FirebaseSignInCredentials from './FirebaseSignInCredentials';
-import FirebaseSignInCustomToken from './FirebaseSignInCustomToken';
-import FirebaseSignInAnonymously from './FirebaseSignInAnonymously';
-import FirebaseSignOut from './FirebaseSignOut';
+import FirebaseDownloadURL from './FirebaseDownloadURL';
+import FirebaseQuery from './FirebaseQuery';
 import FirebaseReference from './FirebaseReference';
 import FirebaseReferencePush from './FirebaseReferencePush';
-import FirebaseQuery from './FirebaseQuery';
+import FirebaseSignInAnonymously from './FirebaseSignInAnonymously';
+import FirebaseSignInCredentials from './FirebaseSignInCredentials';
+import FirebaseSignInCustomToken from './FirebaseSignInCustomToken';
+import FirebaseSignOut from './FirebaseSignOut';
 import FirebaseStorage from './FirebaseStorage';
-import FirebaseDownloadURL from './FirebaseDownloadURL';
+import RNFirebaseUploadMedia from './RNFirebaseUploadMedia';
 
 export {
   Firebase,
   FirebaseAuthState,
-  FirebaseSignInCredentials,
-  FirebaseSignInCustomToken,
-  FirebaseSignInAnonymously,
-  FirebaseSignOut,
+  FirebaseDownloadURL,
+  FirebaseQuery,
   FirebaseReference,
   FirebaseReferencePush,
-  FirebaseQuery,
+  FirebaseSignInAnonymously,
+  FirebaseSignInCredentials,
+  FirebaseSignInCustomToken,
+  FirebaseSignOut,
   FirebaseStorage,
-  FirebaseDownloadURL
+  RNFirebaseUploadMedia
 };

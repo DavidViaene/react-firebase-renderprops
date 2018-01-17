@@ -1,5 +1,4 @@
-import React, {Component} from 'react';
-import {View, StyleSheet} from 'react-native';
+import {Component} from 'react';
 import PropTypes from 'prop-types';
 
 class FirebaseReferencePush extends Component {

@@ -1,3 +1,5 @@
 .babelrc
-lib
+src
+jest
+__mocks__
 CODE_OF_CONDUCT.md

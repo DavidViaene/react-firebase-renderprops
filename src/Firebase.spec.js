@@ -10,9 +10,7 @@ const firebaseConfig = {
 describe('Firebase', () => {
   test('render prop is called', () => {
     const mockRenderProp = jest.fn();
-    const firebase = shallow(
-      <Firebase render={mockRenderProp} config={firebaseConfig} />
-    );
+    shallow(<Firebase render={mockRenderProp} config={firebaseConfig} />);
     expect(mockRenderProp.mock.calls.length).toEqual(1);
   });
 
@@ -21,9 +19,7 @@ describe('Firebase', () => {
     jest.mock('firebase', () => ({
       apps: [{}]
     }));
-    const firebase = shallow(
-      <Firebase render={mockRenderProp} config={firebaseConfig} />
-    );
+    shallow(<Firebase render={mockRenderProp} config={firebaseConfig} />);
     expect(mockRenderProp.mock.calls.length).toEqual(1);
   });
 });
