@@ -59,7 +59,7 @@ Check your firebase authentication state. Returns `false` when not logged in, re
 
 #### FirebaseSignInAnonymously
 
-```
+```jsx harmony
 <FirebaseSignInAnonymously
   firebase={firebase}
   render={user => {}}
@@ -68,7 +68,7 @@ Check your firebase authentication state. Returns `false` when not logged in, re
 
 #### FirebaseSignInCredentials
 
-```
+```jsx harmony
 <FirebaseSignInCredentials
   firebase={firebase}
   email="john@doe.com"
@@ -78,7 +78,7 @@ Check your firebase authentication state. Returns `false` when not logged in, re
 ```
 
 #### FirebaseSignInCustomToken
-```
+```jsx harmony
 <FirebaseSignInCustomToken>
   firebase={firebase}
   token="..."
@@ -87,7 +87,7 @@ Check your firebase authentication state. Returns `false` when not logged in, re
 ```
 
 #### FirebaseSignOut
-```
+```jsx harmony
 <FirebaseSignOut
   firebase={firebase}
   render={(done) => {}}
@@ -96,7 +96,7 @@ Check your firebase authentication state. Returns `false` when not logged in, re
 
 #### FirebaseReference
 Create a Firebase reference to a single path:
-```
+```jsx harmony
 <FirebaseReference 
   firebase={firebase}
   path="blog/posts"
@@ -104,7 +104,7 @@ Create a Firebase reference to a single path:
 />
 ```
 Or create multiple references using the `paths` props
-```
+```jsx harmony
 <FirebaseReference 
   firebase={firebase}
   paths={['blog/posts', 'blog/tags']}
@@ -114,7 +114,7 @@ Or create multiple references using the `paths` props
 
 #### FirebaseReferencePush
 Push data to your reference. Render function has the push reference as parameter.
-```
+```jsx harmony
 <FirebaseReferencePush
   reference={reactionRef}
   payload={{msg: '...'}}
@@ -124,7 +124,7 @@ Push data to your reference. Render function has the push reference as parameter
 
 #### FirebaseQuery
 Query a firebase reference. Possible options: 
-```
+```jsx harmony
 <FirebaseQuery
   on                          // Listen to changes with on
   once                        // Get data once without listening
@@ -141,7 +141,7 @@ Query a firebase reference. Possible options:
  #### FirebaseStorage
  Initializes `firebase.storage()`
  
- ```
+```jsx harmony
  <FirebaseStorage
   firebase={firebase}
   render={(storage) => {}}
@@ -151,7 +151,7 @@ Query a firebase reference. Possible options:
  #### FirebaseDownloadURL
  Gets the download urls from files in the Firebas Storage. (`storage.ref(path).getDownloadURL())
  
- ```
+```jsx harmony
  <FirebaseDownloadURL
   storage={storage}
   path="path"
@@ -161,7 +161,7 @@ Query a firebase reference. Possible options:
  
  #### RNFirebaseUploadMedia
 React Native: upload device media to Firebase Storage
- ```
+```jsx harmony
  <RNFirebaseUploadMedia
   mediaUri="file://..."         // Media uri from device
   storagePath="path"            // Path in storage
