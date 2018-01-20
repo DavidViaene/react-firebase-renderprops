@@ -1,6 +1,6 @@
 {
   "name": "react-firebase-renderprops",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "React components for Firebase, using render props",
   "main": "build/index.js",
   "scripts": {
