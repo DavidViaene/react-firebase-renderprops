@@ -158,15 +158,3 @@ Query a firebase reference. Possible options:
   render={(url) => {}}
  />
  ```
- 
- #### RNFirebaseUploadMedia
-React Native: upload device media to Firebase Storage
-```jsx harmony
- <RNFirebaseUploadMedia
-  mediaUri="file://..."         // Media uri from device
-  storagePath="path"            // Path in storage
-  fileName="custumname"         // Filename to which file will be saved in firebase
-  ext="png"                     // Extension to set the correct mimetype (optional, check if mediaUri contains extension)
-  render={() => {}}
- />
- ```

@@ -6,7 +6,6 @@
   "scripts": {
     "build": "babel src -d build",
     "lint": "eslint src/**; exit 0",
-    "prepublish": "npm run build",
     "test": "jest -c jest.config.unit.js --watchAll",
     "precommit": "lint-staged"
   },
