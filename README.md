@@ -149,7 +149,7 @@ Query a firebase reference. Possible options:
  ```
  
  #### FirebaseDownloadURL
- Gets the download urls from files in the Firebas Storage. (`storage.ref(path).getDownloadURL())
+ Gets the download urls from files in the Firebas Storage. (`storage.ref(path).getDownloadURL()`)
  
 ```jsx harmony
  <FirebaseDownloadURL
