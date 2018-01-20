@@ -1,6 +1,6 @@
 {
   "name": "react-firebase-renderprops",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React components for Firebase, using render props",
   "main": "build/index.js",
   "scripts": {
@@ -58,5 +58,10 @@
   "peerDependencies": {
     "react": "16.2.0",
     "react-native": "0.52.0"
+  },
+  "rnpm": {
+    "commands": {
+      "prelink": "node ./node_modules/react-native-fetch-blob/scripts/prelink.js"
+    }
   }
 }
