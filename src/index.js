@@ -9,7 +9,6 @@ import FirebaseSignInCredentials from './FirebaseSignInCredentials';
 import FirebaseSignInCustomToken from './FirebaseSignInCustomToken';
 import FirebaseSignOut from './FirebaseSignOut';
 import FirebaseStorage from './FirebaseStorage';
-import RNFirebaseUploadMedia from './RNFirebaseUploadMedia';
 
 export {
   Firebase,
@@ -22,6 +21,5 @@ export {
   FirebaseSignInCredentials,
   FirebaseSignInCustomToken,
   FirebaseSignOut,
-  FirebaseStorage,
-  RNFirebaseUploadMedia
+  FirebaseStorage
 };

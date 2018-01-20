@@ -29,8 +29,7 @@
   "homepage": "https://github.com/DavidViaene/react-firebase-renderprops#readme",
   "dependencies": {
     "firebase": "4.8.1",
-    "prop-types": "15.6.0",
-    "react-native-fetch-blob": "0.10.8"
+    "prop-types": "15.6.0"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
@@ -58,10 +57,5 @@
   "peerDependencies": {
     "react": "16.2.0",
     "react-native": "0.52.0"
-  },
-  "rnpm": {
-    "commands": {
-      "prelink": "node ./node_modules/react-native-fetch-blob/scripts/prelink.js"
-    }
   }
 }
