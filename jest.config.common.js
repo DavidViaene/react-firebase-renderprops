@@ -1,5 +1,4 @@
 module.exports = {
-  preset: 'react-native',
   bail: true,
   moduleFileExtensions: ['js', 'jsx', 'json'],
   setupFiles: [

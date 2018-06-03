@@ -97,7 +97,7 @@ Check your firebase authentication state. Returns `false` when not logged in, re
 #### FirebaseReference
 Create a Firebase reference to a single path:
 ```jsx harmony
-<FirebaseReference 
+<FirebaseReference
   firebase={firebase}
   path="blog/posts"
   render={(postRef) => {})
@@ -105,17 +105,17 @@ Create a Firebase reference to a single path:
 ```
 Or create multiple references using the `paths` props
 ```jsx harmony
-<FirebaseReference 
+<FirebaseReference
   firebase={firebase}
   paths={['blog/posts', 'blog/tags']}
   render={(postRef, tagRef) => {})
 />
 ```
 
-#### FirebaseReferencePush
+#### FirebaseReferenceActions
 Push data to your reference. Render function has the push reference as parameter.
 ```jsx harmony
-<FirebaseReferencePush
+<FirebaseReferenceActions
   reference={reactionRef}
   payload={{msg: '...'}}
   render={(refPush) => {})
@@ -123,7 +123,7 @@ Push data to your reference. Render function has the push reference as parameter
 ```
 
 #### FirebaseQuery
-Query a firebase reference. Possible options: 
+Query a firebase reference. Possible options:
 ```jsx harmony
 <FirebaseQuery
   on                          // Listen to changes with on
@@ -137,20 +137,20 @@ Query a firebase reference. Possible options:
   render={posts => {)}
 />
 ```
- 
+
  #### FirebaseStorage
  Initializes `firebase.storage()`
- 
+
 ```jsx harmony
  <FirebaseStorage
   firebase={firebase}
   render={(storage) => {}}
  />
  ```
- 
+
  #### FirebaseDownloadURL
  Gets the download urls from files in the Firebas Storage. (`storage.ref(path).getDownloadURL()`)
- 
+
 ```jsx harmony
  <FirebaseDownloadURL
   storage={storage}
