@@ -1,7 +1,7 @@
 import {Component} from 'react';
 import PropTypes from 'prop-types';
 
-class FirebaseReferenceAction extends Component {
+class FirebaseReferenceActions extends Component {
   static propTypes = {
     reference: PropTypes.object,
     render: PropTypes.func.isRequired,
@@ -16,10 +16,10 @@ class FirebaseReferenceAction extends Component {
   render() {
     const {reference, render, payload, action} = this.props;
 
-    const pushRef = reference[action](payload);
+    const actionRef = reference[action](payload);
 
-    return render(pushRef);
+    return render(actionRef);
   }
 }
 
-export default FirebaseReferenceAction;
+export default FirebaseReferenceActions;

@@ -27,14 +27,15 @@
   },
   "homepage": "https://github.com/DavidViaene/react-firebase-renderprops#readme",
   "dependencies": {
-    "firebase": "4.8.1",
-    "prop-types": "15.6.0"
+    "firebase": "5.0.4",
+    "prop-types": "15.6.0",
+    "react": "16.4.0"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
     "babel-core": "6.26.0",
     "babel-eslint": "8.1.2",
-    "babel-jest": "22.1.0",
+    "babel-jest": "23.0.1",
     "babel-plugin-transform-class-properties": "6.24.1",
     "babel-plugin-transform-object-rest-spread": "6.26.0",
     "babel-preset-env": "1.6.1",
@@ -48,10 +49,10 @@
     "eslint-plugin-jsx-a11y": "6.0.3",
     "eslint-plugin-react": "7.5.1",
     "husky": "0.14.3",
-    "jest": "22.0.4",
-    "lint-staged": "6.0.0",
+    "jest": "23.1.0",
+    "lint-staged": "7.1.3",
     "prettier": "1.9.2",
-    "react-dom": "16.2.0"
+    "react-dom": "16.4.0"
   },
   "peerDependencies": {
     "react": "16.2.0",
