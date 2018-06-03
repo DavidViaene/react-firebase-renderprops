@@ -1,11 +1,11 @@
-import {Component} from 'react';
+import {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 
 // ------------------------------------
 // Main component
 // ------------------------------------
 
-class FirebaseQuery extends Component {
+class FirebaseQuery extends PureComponent {
   constructor(props) {
     super(props);
 
@@ -50,25 +50,26 @@ class FirebaseQuery extends Component {
 
   initQuery() {
     const {reference, limitToLast, orderByKey, startAt} = this.props;
-    const query = reference;
+
+    let query = reference;
 
     if (limitToLast) {
-      query.limitToLast(limitToLast);
+      query = query.limitToLast(limitToLast);
     }
 
     if (orderByKey) {
-      query.orderByKey();
+      query = query.orderByKey();
     }
 
     if (startAt) {
-      query.startAt(startAt);
+      query = query.startAt(startAt);
     }
 
     this.query = query;
   }
 
   addListener() {
-    const {on, once, onChildAdded, onChange, wait} = this.props;
+    const {on, onChildAdded, once, onChange, wait} = this.props;
 
     if (wait) {
       return false;
@@ -79,8 +80,13 @@ class FirebaseQuery extends Component {
     // Listens to changes
     if (on) {
       this.query.on('value', snapshot => {
-        const value = snapshot.val();
+        const value = {
+          key: snapshot.key,
+          ...snapshot.val()
+        };
+
         this.setState({value});
+
         if (onChange) {
           onChange(value);
         }
@@ -88,12 +94,17 @@ class FirebaseQuery extends Component {
     }
 
     // Listens to added children
-    if (on) {
+    if (onChildAdded) {
       this.query.on('child_added', snapshot => {
-        const value = snapshot.val();
+        const value = {
+          key: snapshot.key,
+          ...snapshot.val()
+        };
+
         this.setState({value});
-        if (onChildAdded) {
-          onChildAdded(value);
+
+        if (onChange) {
+          onChange(value);
         }
       });
     }
