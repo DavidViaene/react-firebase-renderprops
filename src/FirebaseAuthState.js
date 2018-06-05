@@ -12,6 +12,8 @@ class FirebaseAuthState extends Component {
     // Will be null, false or object
     this.state = {user: null};
   }
+  
+  onAuthUnsubscribe = null;
 
   static propTypes = {
     render: PropTypes.func,
@@ -23,9 +25,15 @@ class FirebaseAuthState extends Component {
     const {firebase} = this.props;
 
     // Firebase Auth Change
-    firebase.auth().onAuthStateChanged(user => {
+    this.onAuthUnsubscribe = firebase.auth().onAuthStateChanged(user => {
       this.setState({user: user || false});
     });
+  }
+
+  componentWillUnmount() {
+    if(this.onAuthUnsubscribe) {
+      this.onAuthUnsubscribe();
+    }
   }
 
   render() {
