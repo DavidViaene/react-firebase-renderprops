@@ -1,5 +1,24 @@
+# OS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+
+# Source
+src/
+
+# Build
 .babelrc
-src
-jest
+.eslintrc
+
+# Test
+jest/
+jest.config.*.js
 __mocks__
+
+# Logs
+*.log
+
+# Misc
 CODE_OF_CONDUCT.md
