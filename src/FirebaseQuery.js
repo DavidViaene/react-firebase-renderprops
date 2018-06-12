@@ -1,4 +1,4 @@
-import {PureComponent} from 'react';
+import { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
 // ------------------------------------
@@ -9,7 +9,7 @@ class FirebaseQuery extends PureComponent {
   constructor(props) {
     super(props);
 
-    this.state = {value: null};
+    this.state = { value: null };
 
     this.query = null;
     this.initQuery = this.initQuery.bind(this);
@@ -27,7 +27,9 @@ class FirebaseQuery extends PureComponent {
     onChange: PropTypes.func,
     wait: PropTypes.bool,
     orderByKey: PropTypes.bool,
-    startAt: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+    startAt: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    orderByChild: PropTypes.string,
+    equalTo: PropTypes.any
   };
 
   componentDidMount() {
@@ -39,17 +41,28 @@ class FirebaseQuery extends PureComponent {
   }
 
   componentDidUpdate(prevProps) {
-    const {limitToLast, wait} = this.props;
+    const { limitToLast, wait, equalTo } = this.props;
 
     // If these properties change, we build the query again
-    if (limitToLast !== prevProps.limitToLast || wait !== prevProps.wait) {
+    if (
+      limitToLast !== prevProps.limitToLast ||
+      wait !== prevProps.wait ||
+      equalTo !== prevProps.equalTo
+    ) {
       this.query.off();
       this.addListener();
     }
   }
 
   initQuery() {
-    const {reference, limitToLast, orderByKey, startAt} = this.props;
+    const {
+      reference,
+      limitToLast,
+      orderByKey,
+      orderByChild,
+      equalTo,
+      startAt
+    } = this.props;
 
     let query = reference;
 
@@ -61,6 +74,14 @@ class FirebaseQuery extends PureComponent {
       query = query.orderByKey();
     }
 
+    if (orderByChild) {
+      query = query.orderByChild(orderByChild);
+    }
+
+    if (equalTo) {
+      query = query.equalTo(equalTo);
+    }
+
     if (startAt) {
       query = query.startAt(startAt);
     }
@@ -69,7 +90,7 @@ class FirebaseQuery extends PureComponent {
   }
 
   addListener() {
-    const {on, onChildAdded, once, onChange, wait} = this.props;
+    const { on, onChildAdded, once, onChange, wait } = this.props;
 
     if (wait) {
       return false;
@@ -85,7 +106,7 @@ class FirebaseQuery extends PureComponent {
           ...snapshot.val()
         };
 
-        this.setState({value});
+        this.setState({ value });
 
         if (onChange) {
           onChange(value);
@@ -101,7 +122,7 @@ class FirebaseQuery extends PureComponent {
           ...snapshot.val()
         };
 
-        this.setState({value});
+        this.setState({ value });
 
         if (onChange) {
           onChange(value);
@@ -113,7 +134,7 @@ class FirebaseQuery extends PureComponent {
     if (once) {
       this.query.once('value').then(snapshot => {
         const value = snapshot.val();
-        this.setState({value});
+        this.setState({ value });
         if (onChange) {
           onChange(value);
         }
@@ -122,13 +143,13 @@ class FirebaseQuery extends PureComponent {
   }
 
   render() {
-    const {render, toArray} = this.props;
-    const {value} = this.state;
+    const { render, toArray } = this.props;
+    const { value } = this.state;
     let renderValue = value;
 
     if (toArray) {
       renderValue = value
-        ? Object.keys(value).map(key => ({key, ...value[key]}))
+        ? Object.keys(value).map(key => ({ key, ...value[key] }))
         : [];
     }
 

@@ -1,6 +1,6 @@
-import {Component} from 'react';
+import { Component } from 'react';
 import PropTypes from 'prop-types';
-import firebase from 'firebase';
+import firebase from 'firebase/app';
 
 // ------------------------------------
 // Main component
@@ -13,7 +13,7 @@ class Firebase extends Component {
   };
 
   render() {
-    const {render, config} = this.props;
+    const { render, config } = this.props;
 
     const firebaseApp = firebase.apps.length
       ? firebase.apps[0]

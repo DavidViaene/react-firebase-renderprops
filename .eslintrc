@@ -17,10 +17,6 @@
       "error",
       "unix"
     ],
-    "object-curly-spacing": [
-      "error",
-      "never"
-    ],
     "quotes": [
       "error",
       "single",
