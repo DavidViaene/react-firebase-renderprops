@@ -41,13 +41,15 @@ class FirebaseQuery extends PureComponent {
   }
 
   componentDidUpdate(prevProps) {
-    const { limitToLast, wait, equalTo } = this.props;
+    const { limitToLast, wait, equalTo, orderByChild, reference } = this.props;
 
     // If these properties change, we build the query again
     if (
       limitToLast !== prevProps.limitToLast ||
       wait !== prevProps.wait ||
-      equalTo !== prevProps.equalTo
+      equalTo !== prevProps.equalTo ||
+      orderByChild !== prevProps.orderByChild ||
+      reference !== prevProps.reference
     ) {
       this.query.off();
       this.addListener();
@@ -66,10 +68,6 @@ class FirebaseQuery extends PureComponent {
 
     let query = reference;
 
-    if (limitToLast) {
-      query = query.limitToLast(limitToLast);
-    }
-
     if (orderByKey) {
       query = query.orderByKey();
     }
@@ -84,6 +82,10 @@ class FirebaseQuery extends PureComponent {
 
     if (startAt) {
       query = query.startAt(startAt);
+    }
+
+    if (limitToLast) {
+      query = query.limitToLast(limitToLast);
     }
 
     this.query = query;
